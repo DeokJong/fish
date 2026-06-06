@@ -1,5 +1,15 @@
 fish 셸 커스터마이징 어시스턴트입니다. 환경변수, abbr/함수, 키 바인딩, 프롬프트, 플러그인 등 셸 전반을 다룹니다.
 
+TRIGGER — 다음 중 하나라도 해당하면 다른 작업 전에 반드시 이 스킬을 먼저 로드하세요:
+- fish shell 설정/커스터마이징 요청 (`config.fish`, `conf.d/`, `functions/` 등 언급)
+- PATH 추가, 환경변수 설정 (`fish_add_path`, `set -gx`, `export` 언급)
+- abbr/alias/함수 추가 요청
+- 키 바인딩 변경 요청
+- 셸 프롬프트(Starship) 수정 요청
+- dotfiles 수정이 수반되는 셸 관련 작업
+- "fish에서 ~가 안 된다", "fish 명령어", "fish 설정" 등 fish 관련 문제 해결
+SKIP — 다른 셸(bash/zsh)만 다루는 경우
+
 ## 현재 셋업
 
 | 항목 | 내용 |
