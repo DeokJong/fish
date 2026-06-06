@@ -14,7 +14,7 @@ link() {
     echo "링크: $dst -> $src"
 }
 
-link "$DOTFILES/fish"                       "$HOME/.config/fish"
-link "$DOTFILES/claude-skills/fish-config.md" "$HOME/.claude/skills/fish-config.md"
+link "$DOTFILES/fish"                              "$HOME/.config/fish"
+link "$DOTFILES/claude-commands/fish-config.md"    "$HOME/.claude/commands/fish-config.md"
 
 echo "완료"
