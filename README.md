@@ -11,7 +11,7 @@
 | `brew.fish` | Homebrew PATH 초기화 |
 | `env.fish` | 환경변수 (AWS, IME, JetBrains Toolbox PATH) |
 | `prompt.fish` | Starship 프롬프트 초기화 |
-| `abbr.fish` | 약어(abbr) 목록 |
+| `abbr.fish` | alias/abbr 단축 명령 목록 |
 
 ### 환경변수 (`conf.d/env.fish`)
 
