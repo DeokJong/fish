@@ -24,11 +24,11 @@
 | `SDL_IM_MODULE` | `fcitx` |
 | PATH | `~/.local/share/JetBrains/Toolbox/scripts` |
 
-### 약어 (`conf.d/abbr.fish`)
+### 단축 명령 (`conf.d/abbr.fish`)
 
-| 약어 | 확장 |
-|------|------|
-| `kubectl` | `k` |
+| 명령 | 확장 | 방식 |
+|------|------|------|
+| `k` | `kubectl` | alias |
 
 ### 함수 (`functions/`)
 
