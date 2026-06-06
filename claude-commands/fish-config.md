@@ -42,17 +42,19 @@ SKIP — 다른 셸(bash/zsh)만 다루는 경우
 - `conf.d/env.fish`에 `set -gx VAR value` 추가
 - PATH는 `fish_add_path /some/bin` 사용 (중복 없이 prepend)
 
-**abbr (약어) — alias 대신 사용**
-```fish
-abbr --add g git
-abbr --add ga 'git add'
-```
-- `conf.d/` 하위 파일에 선언하거나 `abbr --add` 실행 (universal variable로 저장됨)
-- 새 카테고리면 `conf.d/abbr.fish` 파일 새로 생성
+**alias vs abbr 선택 기준**
+
+| 방식 | 언제 사용 | 예시 |
+|------|-----------|------|
+| `alias` | 단순 명령 단축 (`k` → `kubectl` 등), 바로 실행되어야 할 때 | `alias k='kubectl'` |
+| `abbr` | 입력 버퍼에서 텍스트 치환이 필요할 때 (스페이스 키로 확장) | `abbr --add ga 'git add'` |
+
+- **주의**: `abbr`는 스페이스/엔터 전까지 확장 안 됨 — `k` + 엔터로 바로 실행하려면 `alias` 사용
+- 둘 다 `conf.d/abbr.fish`에 선언
 
 **함수**
 - `functions/<이름>.fish` 파일 1개 = 함수 1개 (파일명 = 함수명 필수)
-- 복잡한 로직은 함수로, 단순 단축은 abbr로
+- 복잡한 로직(인자 처리, 조건 분기 등)은 함수로, 단순 단축은 alias/abbr로
 
 **키 바인딩**
 - `functions/fish_user_key_bindings.fish` 내 `bind` 추가/수정
