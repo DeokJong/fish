@@ -25,6 +25,7 @@ SKIP — 다른 셸(bash/zsh)만 다루는 경우
 ```
 ~/dotfiles/fish/               ← ~/.config/fish 심볼릭 링크
 ├── conf.d/
+│   ├── abbr.fish              alias/abbr 단축 명령 목록
 │   ├── brew.fish              환경변수: Homebrew PATH 초기화
 │   ├── env.fish               환경변수: IME, 기타 set -x 선언
 │   └── prompt.fish            Starship 초기화
