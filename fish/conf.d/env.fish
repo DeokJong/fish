@@ -1,6 +1,9 @@
 # 환경변수
 set -x AWS_DEFAULT_REGION ap-northeast-2
 
+# JetBrains Toolbox
+fish_add_path ~/.local/share/JetBrains/Toolbox/scripts
+
 set -x GTK_IM_MODULE fcitx
 set -x QT_IM_MODULE fcitx
 set -x XMODIFIERS @im=fcitx
