@@ -37,6 +37,8 @@
 | `assume.fish` | AWS granted assume 래퍼 |
 | `k9s.fish` | k9s 실행 시 로케일 강제 (`en_US.utf8`) |
 | `fish_user_key_bindings.fish` | 키 바인딩 (Shift+Arrow 선택, Ctrl+Shift+Arrow 단어 선택) |
+| `cd.fish` | 파일 경로 입력 시 해당 파일의 디렉터리로 이동, 그 외엔 기본 cd 동작 |
+| `cdp.fish` | `~/Desktop/project`로 이동 |
 
 ### 자동완성 (`completions/`)
 
