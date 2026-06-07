@@ -18,6 +18,7 @@
 | 변수 | 값 |
 |------|----|
 | `AWS_DEFAULT_REGION` | `ap-northeast-2` |
+| `KUBE_EDITOR` | `zed --wait` |
 | `GTK_IM_MODULE` | `fcitx` |
 | `QT_IM_MODULE` | `fcitx` |
 | `XMODIFIERS` | `@im=fcitx` |
